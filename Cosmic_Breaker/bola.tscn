@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cxrr161rfmguk"]
+
+[ext_resource type="Script" uid="uid://d33i71svfgu1m" path="res://bola.gd" id="1_6ycda"]
+[ext_resource type="Texture2D" uid="uid://ci3w6so4tuyau" path="res://Bola_Roca_Espacial (2).png" id="1_c0eli"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6ycda"]
+radius = 18.0
+
+[node name="Bola" type="Node2D" unique_id=1406438547]
+
+[node name="bola" type="CharacterBody2D" parent="." unique_id=1545149004]
+position = Vector2(580, 448)
+script = ExtResource("1_6ycda")
+
+[node name="Sprite2D" type="Sprite2D" parent="bola" unique_id=482088728]
+scale = Vector2(0.110294074, 0.102941155)
+texture = ExtResource("1_c0eli")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bola" unique_id=950314961]
+shape = SubResource("CircleShape2D_6ycda")

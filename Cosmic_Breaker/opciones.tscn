@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bsyc717r5367h"]
+
+[ext_resource type="Texture2D" uid="uid://dnsqc2haegoqu" path="res://espacio-planetario-paisaje-superficie-ai-generado-bits-planeta-escena-de-juego-vector-fondo-cósmico-galaxia-extraterrestre-286584179.jpg" id="1_0bc36"]
+[ext_resource type="Script" uid="uid://d05sehhgv73jh" path="res://opciones.gd" id="1_wvblx"]
+
+[node name="Opciones" type="Control" unique_id=549427310]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wvblx")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=871765869]
+texture_filter = 1
+layout_mode = 0
+offset_left = 0.9999981
+offset_top = -1.0000005
+offset_right = 1606.3636
+offset_bottom = 825.24994
+scale = Vector2(0.71697146, 0.7866869)
+texture = ExtResource("1_0bc36")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=388616026]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1631505913]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=377162146]
+layout_mode = 2
+
+[node name="HSlider" type="HSlider" parent="VBoxContainer" unique_id=561893885]
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="VBoxContainer" unique_id=140015783]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=713568657]
+layout_mode = 2

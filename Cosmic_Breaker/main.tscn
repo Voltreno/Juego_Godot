@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://d03v7ylhnn2hx"]
+
+[ext_resource type="Script" uid="uid://db7h8jt5ydedf" path="res://barra.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cxrr161rfmguk" path="res://bola.tscn" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://df7c7i6a7rapq" path="res://main.gd" id="1_7mycd"]
+[ext_resource type="Texture2D" uid="uid://brsbloftsppor" path="res://fondo-galaxia-realista_23-2148971567.jpg" id="1_lquwl"]
+[ext_resource type="Texture2D" uid="uid://b4rqeccjc1gbu" path="res://futuristic-sci-fi-hud-panels-horizontal-bars-cyberpunk-ui-design-elements-black-white-free-vector.png" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://b2dvceg4ep1yd" path="res://bloque.tscn" id="3_h2yge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(127, 26)
+
+[node name="Node2D" type="Node2D" unique_id=1868102710]
+script = ExtResource("1_7mycd")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1232133560]
+offset_right = 1150.0
+offset_bottom = 648.0
+texture = ExtResource("1_lquwl")
+
+[node name="Bola" parent="." unique_id=1406438547 instance=ExtResource("1_1bvp3")]
+position = Vector2(-22, 15)
+
+[node name="Bloque" parent="." unique_id=197120325 instance=ExtResource("3_h2yge")]
+position = Vector2(469, -55)
+
+[node name="Bloque2" parent="." unique_id=2028224345 instance=ExtResource("3_h2yge")]
+position = Vector2(187, 23)
+
+[node name="Bloque3" parent="." unique_id=565297606 instance=ExtResource("3_h2yge")]
+position = Vector2(327, -55)
+
+[node name="Bloque4" parent="." unique_id=254904132 instance=ExtResource("3_h2yge")]
+position = Vector2(187, -55)
+
+[node name="Bloque5" parent="." unique_id=190533820 instance=ExtResource("3_h2yge")]
+position = Vector2(-97, -55)
+
+[node name="Bloque6" parent="." unique_id=1086219540 instance=ExtResource("3_h2yge")]
+position = Vector2(468, 97)
+
+[node name="Bloque7" parent="." unique_id=2138659690 instance=ExtResource("3_h2yge")]
+position = Vector2(45, 23)
+
+[node name="Bloque8" parent="." unique_id=1156536350 instance=ExtResource("3_h2yge")]
+position = Vector2(327, 23)
+
+[node name="Bloque9" parent="." unique_id=1123857128 instance=ExtResource("3_h2yge")]
+position = Vector2(-98, 22)
+
+[node name="Bloque10" parent="." unique_id=1007989427 instance=ExtResource("3_h2yge")]
+position = Vector2(45, -54)
+
+[node name="Bloque11" parent="." unique_id=260573946 instance=ExtResource("3_h2yge")]
+position = Vector2(44, 99)
+
+[node name="Bloque12" parent="." unique_id=1824040223 instance=ExtResource("3_h2yge")]
+position = Vector2(327, 98)
+
+[node name="Bloque13" parent="." unique_id=1645832654 instance=ExtResource("3_h2yge")]
+position = Vector2(186, 99)
+
+[node name="Bloque14" parent="." unique_id=1487404684 instance=ExtResource("3_h2yge")]
+position = Vector2(-98, 99)
+
+[node name="Bloque15" parent="." unique_id=921928451 instance=ExtResource("3_h2yge")]
+position = Vector2(468, 22)
+
+[node name="Barra" type="StaticBody2D" parent="." unique_id=865837693]
+position = Vector2(558, 540)
+script = ExtResource("1_0xm2m")
+
+[node name="Sprite2D" type="Sprite2D" parent="Barra" unique_id=1265338530]
+scale = Vector2(0.22475544, 0.2166943)
+texture = ExtResource("2_0xm2m")
+region_rect = Rect2(208.00504, 0, 565.9076, 307)
+region_filter_clip_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barra" unique_id=982287824]
+scale = Vector2(1, 1.0000001)
+shape = SubResource("RectangleShape2D_0xm2m")

@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://mll3bfr80uqg"]
+
+[ext_resource type="Script" uid="uid://bqad0mu1ahr20" path="res://victoria.gd" id="1_fty84"]
+[ext_resource type="FontFile" uid="uid://615ckoj01v8x" path="res://Fuentes/PressStart2P-Regular.ttf" id="2_l06h1"]
+[ext_resource type="FontFile" uid="uid://c4ebcpiwukm3u" path="res://Fuentes/Fuente_Botones/VCR_OSD_MONO_1.001.ttf" id="3_eudnl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fty84"]
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+
+[node name="Control" type="Control" unique_id=1281894875]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fty84")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1493860534]
+layout_mode = 0
+offset_right = 1190.0
+offset_bottom = 671.0
+color = Color(0, 0.7607843, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1128944438]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 278.0
+offset_right = 1092.0
+offset_bottom = 378.0
+theme_override_fonts/font = ExtResource("2_l06h1")
+theme_override_font_sizes/font_size = 100
+text = "Ganaste!!!"
+horizontal_alignment = 1
+
+[node name="btn_menu" type="Button" parent="." unique_id=983642407]
+layout_mode = 0
+offset_left = 454.0
+offset_top = 457.0
+offset_right = 713.0
+offset_bottom = 527.0
+theme_override_fonts/font = ExtResource("3_eudnl")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_fty84")
+text = "Volver al menú"

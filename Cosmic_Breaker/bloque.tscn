@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b2dvceg4ep1yd"]
+
+[ext_resource type="Script" uid="uid://b38rbsfmty0jr" path="res://static_body_2d.gd" id="1_rey5g"]
+[ext_resource type="Texture2D" uid="uid://drvdapbf5trer" path="res://pixel-art-background-seamless-pattern-260nw-2678167329.jpg" id="2_0r36w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0r36w"]
+size = Vector2(213.33328, 58)
+
+[node name="Bloque" type="Node2D" unique_id=197120325 groups=["bloques"]]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2114757654 groups=["bloque", "bloques"]]
+position = Vector2(372, 129)
+script = ExtResource("1_rey5g")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1899558397 groups=["bloques"]]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_0r36w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1753582727 groups=["bloques"]]
+scale = Vector2(0.6, 1)
+shape = SubResource("RectangleShape2D_0r36w")

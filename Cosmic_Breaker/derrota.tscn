@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://cdh8qoymfddbv"]
+
+[ext_resource type="Script" uid="uid://dpwpg782d6t8b" path="res://derrota.gd" id="1_j6myv"]
+[ext_resource type="FontFile" uid="uid://615ckoj01v8x" path="res://Fuentes/PressStart2P-Regular.ttf" id="2_k6u1l"]
+[ext_resource type="FontFile" uid="uid://c4ebcpiwukm3u" path="res://Fuentes/Fuente_Botones/VCR_OSD_MONO_1.001.ttf" id="3_ipg1a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6myv"]
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Control" type="Control" unique_id=2119676842]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j6myv")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1306842711]
+layout_mode = 0
+offset_right = 1190.0
+offset_bottom = 671.0
+color = Color(0.8081222, 0.00011700585, 6.478399e-05, 1)
+
+[node name="Label" type="Label" parent="." unique_id=871906458]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 245.0
+offset_right = 1124.0
+offset_bottom = 345.0
+theme_override_fonts/font = ExtResource("2_k6u1l")
+theme_override_font_sizes/font_size = 100
+text = "Perdiste ;("
+horizontal_alignment = 1
+
+[node name="btn_menu" type="Button" parent="." unique_id=1851899922]
+layout_mode = 0
+offset_left = 454.0
+offset_top = 457.0
+offset_right = 713.0
+offset_bottom = 527.0
+theme_override_fonts/font = ExtResource("3_ipg1a")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_j6myv")
+text = "Volver al menú"

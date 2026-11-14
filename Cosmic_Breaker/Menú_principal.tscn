@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://cis1ntahtccjd"]
+
+[ext_resource type="Texture2D" uid="uid://dnsqc2haegoqu" path="res://espacio-planetario-paisaje-superficie-ai-generado-bits-planeta-escena-de-juego-vector-fondo-cósmico-galaxia-extraterrestre-286584179.jpg" id="1_b5yeq"]
+[ext_resource type="Script" uid="uid://d2nkb167a23tl" path="res://menú_principal.gd" id="1_bwi2m"]
+[ext_resource type="FontFile" uid="uid://615ckoj01v8x" path="res://Fuentes/PressStart2P-Regular.ttf" id="2_2ls5d"]
+[ext_resource type="FontFile" uid="uid://c4ebcpiwukm3u" path="res://Fuentes/Fuente_Botones/VCR_OSD_MONO_1.001.ttf" id="3_bwi2m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycjmx"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.043137256, 0.07450981, 0.16862746, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sd81c"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.043137256, 0.07450981, 0.16862746, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="MenúPrincipal" type="Control" unique_id=1577133787]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bwi2m")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1666362433]
+texture_filter = 1
+layout_mode = 0
+offset_left = 0.9999981
+offset_top = -1.0000005
+offset_right = 1606.3636
+offset_bottom = 825.24994
+scale = Vector2(0.71697146, 0.7866869)
+texture = ExtResource("1_b5yeq")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1499793957]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.078431375)
+
+[node name="Label" type="Label" parent="." unique_id=1123981200]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -422.5
+offset_top = -242.5
+offset_right = 422.5
+offset_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_2ls5d")
+theme_override_font_sizes/font_size = 100
+text = " COSMIC 
+BREAKER"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=801378952]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = 21.0
+offset_right = 104.0
+offset_bottom = 229.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="BtnJugar" type="Button" parent="VBoxContainer" unique_id=1825342719]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_bwi2m")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_ycjmx")
+text = "Jugar"
+
+[node name="BtnSalir" type="Button" parent="VBoxContainer" unique_id=905315287]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_bwi2m")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_sd81c")
+text = "Salir"
